@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Button
 import arpit.parekh.kotlinchaitanyaprashantproject.R
 
@@ -15,6 +16,8 @@ class FirstActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.btnSwitch)
         val button2 = findViewById<Button>(R.id.btnSwitchImplicit)
         val button3 = findViewById<Button>(R.id.btnCall)
+        val button4 = findViewById<Button>(R.id.btnMail)
+        val button5 = findViewById<Button>(R.id.btnCamera)
 
         title = "First Activity"
 
@@ -62,5 +65,26 @@ class FirstActivity : AppCompatActivity() {
             // send mail from your activity
 
         }
+
+        button4.setOnClickListener {
+
+            // TODO : Mail intent
+
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("mailto:arpitparekh0042@gmail.com")
+//            intent.putExtra(Intent.EXTRA_SUBJECT,"Demo Subject")
+//            intent.putExtra(Intent.EXTRA_TEXT,"This is text")
+            startActivity(intent)
+
+        }
+
+        button5.setOnClickListener {
+
+            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            startActivity(intent)
+
+        }
+
+
     }
 }

@@ -35,4 +35,23 @@
         android:text="Call"
         app:layout_constraintStart_toStartOf="@+id/btnSwitchImplicit"
         app:layout_constraintTop_toBottomOf="@+id/btnSwitchImplicit" />
+
+    <Button
+        android:id="@+id/btnMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="19dp"
+        android:text="Mail"
+        app:layout_constraintBottom_toTopOf="@+id/btnSwitchImplicit"
+        app:layout_constraintStart_toStartOf="@+id/btnSwitchImplicit" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Camera"
+        app:layout_constraintBottom_toTopOf="@+id/btnSwitch"
+        app:layout_constraintEnd_toEndOf="@+id/btnSwitch" />
 </androidx.constraintlayout.widget.ConstraintLayout>
