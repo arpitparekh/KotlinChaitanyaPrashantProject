@@ -10,27 +10,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject">
         <activity
-            android:name=".pass_String.TwoActivity"
+            android:name=".pass_object.program.ShowEmpDataActivity"
             android:exported="false" />
         <activity
-            android:name=".pass_String.OneActivity"
-            android:exported="true" >
-
+            android:name=".pass_object.program.InsertEmpDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pass_object.BActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pass_object.AActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".pass_String.TwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pass_String.OneActivity"
+            android:exported="true" />
         <activity
             android:name=".activity_switch.SecondActivity"
             android:exported="false" />
         <activity
             android:name=".activity_switch.FirstActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

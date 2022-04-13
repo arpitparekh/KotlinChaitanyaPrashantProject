@@ -12,7 +12,7 @@ class TwoActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.tvName)
 
-        val intent = getIntent()
+        val intent = intent
 
         val stringData : String? = intent.getStringExtra("data")
 
