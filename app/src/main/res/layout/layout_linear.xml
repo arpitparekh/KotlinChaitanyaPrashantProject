@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FF5722"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Student"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="#9C27B0"
+        android:textSize="30dp"
+        android:id="@+id/btn1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:alpha="0.6"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start"
+        android:text="Hello"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/flower"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:backgroundTint="#4CAF50"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:layout_weight="1"
+        android:backgroundTint="#E91E63"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:background="#FFEB3B">-->
+<!--        -->
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hello"/>-->
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hello"/>-->
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hello"/>-->
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hello"/>-->
+<!--        -->
+<!--    </LinearLayout>-->
+
+
+
+
+</LinearLayout>

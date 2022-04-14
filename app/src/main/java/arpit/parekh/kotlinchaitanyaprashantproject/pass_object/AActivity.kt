@@ -20,7 +20,6 @@ class AActivity : AppCompatActivity() {
             val intent = Intent(this,BActivity::class.java)
             intent.putExtra("object",student)
             startActivity(intent)
-
         }
 
     }
