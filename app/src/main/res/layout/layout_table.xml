@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:collapseColumns="0">
+
+<!--    arrange child row by row-->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Row Element"
+            android:background="#FFEB3B"/>
+
+        <TextView
+            android:text="Row Element"
+            android:background="#4CAF50"/>
+
+        <TextView
+            android:text="Row Element"
+            android:background="#FF5722"/>
+
+        <TextView
+            android:text="Row Element"
+            android:background="#673AB7"/>
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Row Element"
+            android:background="#FFEB3B"/>
+
+        <TextView
+            android:text="Row Element"
+            android:background="#4CAF50"/>
+
+        <TextView
+            android:text="Row Element"
+            android:background="#FF5722"/>
+
+        <TextView
+            android:text="Row Element"
+            android:background="#673AB7"/>
+
+    </TableRow>
+
+</TableLayout>
