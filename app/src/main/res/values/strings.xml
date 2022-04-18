@@ -3,5 +3,7 @@
     <string name="name">tops</string>
 
     <string name="data">wqerqwewqe eqweqwe qweqweqwe qweqwe qweqwewe </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
