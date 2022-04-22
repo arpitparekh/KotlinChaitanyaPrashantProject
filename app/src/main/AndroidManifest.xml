@@ -10,24 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject">
         <activity
-            android:name=".pass_string_fragment.AnotherHolderActivity"
-            android:exported="true" >
-
+            android:name=".viewBinding_dataBinding.MyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewBinding_dataBinding.MyBindingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pass_object_fragment.ExtraHolderActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".pass_string_fragment.AnotherHolderActivity"
+            android:exported="true" />
         <activity
             android:name=".fragments_another.MyHolderActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".fragments.HolderActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".coordinator_layout.MyCoActivity"
             android:exported="true" />
