@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject">
         <activity
-            android:name=".fragments.HolderActivity"
+            android:name=".pass_string_fragment.AnotherHolderActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -21,10 +21,16 @@
 
         </activity>
         <activity
-            android:name=".coordinator_layout.MyCoActivity"
+            android:name=".fragments_another.MyHolderActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".fragments.HolderActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".coordinator_layout.MyCoActivity"
+            android:exported="true" />
         <activity
             android:name=".pass_object.program.ShowEmpDataActivity"
             android:exported="false" />
@@ -36,7 +42,7 @@
             android:exported="false" />
         <activity
             android:name=".pass_object.AActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".pass_String.TwoActivity"
             android:exported="false" />
