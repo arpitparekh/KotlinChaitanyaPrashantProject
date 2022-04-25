@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="obj"
+            type="arpit.parekh.kotlinchaitanyaprashantproject.viewBinding_dataBinding.Tops" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".viewBinding_dataBinding.MyDataBindingActivity">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="165dp"
+            android:textSize="20dp"
+            android:text="@{obj.name_faculty}"
+            app:layout_constraintEnd_toStartOf="@+id/tvNoStudent"
+            app:layout_constraintStart_toStartOf="@+id/tvNoStudent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNoStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:text="@{String.valueOf(obj.no_of_faculty)}"
+            app:layout_constraintEnd_toStartOf="@+id/tvNoFaculty"
+            app:layout_constraintStart_toStartOf="@+id/tvNoFaculty"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvNoFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="177dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:text="@{String.valueOf(obj.no_of_student)}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNoStudent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

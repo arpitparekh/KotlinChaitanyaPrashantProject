@@ -9,12 +9,14 @@
         <entry key="app/src/main/res/layout/activity_aactivity.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_another_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_bactivity.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_ctsactivity.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_extra_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_insert_emp_data.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_my_co.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_my_data_binding.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_my_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_one.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.2604166666666667" />
