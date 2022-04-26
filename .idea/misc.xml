@@ -9,7 +9,7 @@
         <entry key="app/src/main/res/layout/activity_aactivity.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_another_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_bactivity.xml" value="0.264" />
-        <entry key="app/src/main/res/layout/activity_ctsactivity.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_ctsactivity.xml" value="0.8800000000000001" />
         <entry key="app/src/main/res/layout/activity_extra_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_holder.xml" value="0.26145833333333335" />
@@ -18,9 +18,12 @@
         <entry key="app/src/main/res/layout/activity_my_co.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_data_binding.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_my_holder.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/activity_new_ctsactivity.xml" value="0.536" />
         <entry key="app/src/main/res/layout/activity_one.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_radio_button.xml" value="0.536" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_show_emp_data.xml" value="0.10925925925925926" />
+        <entry key="app/src/main/res/layout/activity_toogle.xml" value="0.290625" />
         <entry key="app/src/main/res/layout/activity_two.xml" value="0.264" />
         <entry key="app/src/main/res/layout/fragment_dusra.xml" value="0.2390625" />
         <entry key="app/src/main/res/layout/fragment_goa.xml" value="0.26145833333333335" />

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject">
         <activity
-            android:name=".widgets.CTSActivity"
+            android:name=".widgets.RadioButtonActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -21,16 +21,22 @@
 
         </activity>
         <activity
-            android:name=".viewBinding_dataBinding.MyDataBindingActivity"
+            android:name=".widgets.NewCTSActivity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".widgets.CTSActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".viewBinding_dataBinding.MyDataBindingActivity"
+            android:exported="true" />
         <activity
             android:name=".viewBinding_dataBinding.MyActivity"
             android:exported="false" />
         <activity
             android:name=".pass_object_fragment.ExtraHolderActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".pass_string_fragment.AnotherHolderActivity"
             android:exported="true" />

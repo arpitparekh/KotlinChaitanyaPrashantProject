@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".widgets.NewCTSActivity">
+
+    <CheckBox
+        android:id="@+id/cbGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:text="Female"
+        app:layout_constraintBottom_toTopOf="@+id/swithGender"
+        app:layout_constraintEnd_toEndOf="@+id/swithGender" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/swithGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="Female"
+        app:layout_constraintBottom_toTopOf="@+id/tbGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tbGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="151dp"
+        android:text="ToggleButton"
+        android:textOff="Female"
+        android:textOn="Male"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/swithGender" />
+</androidx.constraintlayout.widget.ConstraintLayout>

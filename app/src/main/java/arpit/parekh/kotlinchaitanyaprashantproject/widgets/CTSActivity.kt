@@ -51,9 +51,7 @@ class CTSActivity : AppCompatActivity() {
 
             }
 
-
         }
-
         binding.tbGender.setOnCheckedChangeListener { compoundButton, b ->
 
             val button = Button(this)
