@@ -1,9 +1,11 @@
 package arpit.parekh.kotlinchaitanyaprashantproject.widgets
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.annotation.RequiresApi
 import arpit.parekh.kotlinchaitanyaprashantproject.R
@@ -58,11 +60,13 @@ class CTSActivity : AppCompatActivity() {
 
             if(b){
                 button.text = "Button"
+                button.id = R.id.btnNew
                 binding.root.addView(button)
 
             }else{
-
-
+            // we need id to remove button from layout
+                val button = findViewById<Button>(R.id.btnNew)
+                binding.root.removeView(button)
 
             }
 
