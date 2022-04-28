@@ -15,6 +15,19 @@
         android:id="@+id/action_item3"/>
     <item
         android:title="item4"
-        android:id="@+id/action_item4"/>
+        android:id="@+id/action_item4">
+
+        <menu>
+
+            <item
+                android:title="item5"
+                android:id="@+id/action_item5"/>
+            <item
+                android:title="item6"
+                android:id="@+id/action_item6"/>
+
+        </menu>
+
+    </item>
 
 </menu>
