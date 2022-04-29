@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialogs.MyDialogActivity">
+
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="37dp"
+        android:text="Alert Dialog"
+        app:layout_constraintStart_toStartOf="@+id/btnAlertCustom"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAlertCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Alert Dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlert" />
+
+    <Button
+        android:id="@+id/btnMultiChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:text="MultiChoiceDialog"
+        app:layout_constraintStart_toStartOf="@+id/btnAlertCustom"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlertCustom" />
+
+    <Button
+        android:id="@+id/btinSingleChoiceDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Choice Dialog"
+        app:layout_constraintStart_toStartOf="@+id/btnAlertCustom"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultiChoice" />
+
+    <Button
+        android:id="@+id/btnProgress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:text="Progress Dialog 1"
+        app:layout_constraintStart_toStartOf="@+id/btinSingleChoiceDialog"
+        app:layout_constraintTop_toBottomOf="@+id/btinSingleChoiceDialog" />
+
+    <Button
+        android:id="@+id/btnProgress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="Progress Dialog 2"
+        app:layout_constraintStart_toStartOf="@+id/btnProgress1"
+        app:layout_constraintTop_toBottomOf="@+id/btnProgress1" />
+
+    <Button
+        android:id="@+id/btnTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:text="Time Picker"
+        app:layout_constraintStart_toStartOf="@+id/btnProgress2"
+        app:layout_constraintTop_toBottomOf="@+id/btnProgress2" />
+
+    <Button
+        android:id="@+id/btnDataPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:text="Date Picker"
+        app:layout_constraintStart_toStartOf="@+id/btnTimePicker"
+        app:layout_constraintTop_toBottomOf="@+id/btnTimePicker" />
+
+    <TextView
+        android:id="@+id/tvSomething"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="#FFC107"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDataPicker" />
+</androidx.constraintlayout.widget.ConstraintLayout>
