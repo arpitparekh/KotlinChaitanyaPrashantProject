@@ -237,7 +237,9 @@ class MyDialogActivity : AppCompatActivity() {
         val pattern12 = SimpleDateFormat("hh:mm a")
         val pattern24 = SimpleDateFormat("HH:mm")
 
-        // first convert 24 hours string into Date class object
+        // first convert 24 hours string into Date class object using pattern24
+
+        // convert 24 date object into 12 hours string using pattern12
 
         val date24 : Date =  pattern24.parse(hour24)
 
