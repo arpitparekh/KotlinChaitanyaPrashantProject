@@ -2,22 +2,29 @@ package arpit.parekh.kotlinchaitanyaprashantproject.dialogs
 
 import android.app.Dialog
 import android.app.ProgressDialog
+import android.app.TimePickerDialog
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TimePicker
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import arpit.parekh.kotlinchaitanyaprashantproject.R
 import arpit.parekh.kotlinchaitanyaprashantproject.databinding.ActivityMyDialogBinding
 import arpit.parekh.kotlinchaitanyaprashantproject.databinding.DialogLayoutBinding
+import arpit.parekh.kotlinchaitanyaprashantproject.databinding.ProgressHorizontalBinding
 import arpit.parekh.kotlinchaitanyaprashantproject.databinding.ProgressSpinnerBinding
 import com.google.android.material.snackbar.Snackbar
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class MyDialogActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityMyDialogBinding
     lateinit var dialogBinding: DialogLayoutBinding
     lateinit var progressSpinnerBinding : ProgressSpinnerBinding
+    lateinit var progressHorizontalBinding: ProgressHorizontalBinding
     lateinit var items : ArrayList<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -123,7 +130,12 @@ class MyDialogActivity : AppCompatActivity() {
 
                     Toast.makeText(this,hobbies[i],Toast.LENGTH_SHORT).show()
 
-                }).create().show()
+                })
+                .setPositiveButton("yes", DialogInterface.OnClickListener { dialogInterface, i ->
+
+                    // positive button for single choice dialog
+                })
+                .create().show()
 
 
         }
@@ -140,13 +152,97 @@ class MyDialogActivity : AppCompatActivity() {
 //            pd.show()
 
             val dialog = Dialog(this)
-            dialog.setContentView(progressSpinnerBinding.root)
-            dialog.show()
+
+
+            val builder = AlertDialog.Builder(this)
+            builder.setView(progressSpinnerBinding.root)
+            builder.setPositiveButton("Ok", DialogInterface.OnClickListener { dialogInterface, i ->
+
+            })
+            builder.show()
 
 //            dialog.dismiss()
 
 
         }
+
+        binding.btnProgress2.setOnClickListener {
+
+            progressHorizontalBinding = ProgressHorizontalBinding.inflate(layoutInflater)
+
+            val dialog = Dialog(this)
+            dialog.setContentView(progressHorizontalBinding.root)
+
+            progressHorizontalBinding.pbHorizontal.max = 100
+
+            dialog.show()
+
+            Thread{
+
+                for( i in 0..100){
+
+                    Thread.sleep(100)
+
+                    runOnUiThread {
+
+                        progressHorizontalBinding.pbHorizontal.progress = i
+                        progressHorizontalBinding.tvProgress.text = i.toString()
+
+                    }
+                    if(i==100){
+
+                        dialog.dismiss()
+
+                        runOnUiThread {
+
+                            Toast.makeText(this,"Download SuccessFull",Toast.LENGTH_SHORT).show()
+
+                        }
+
+                    }
+                }
+
+            }.start()
+
+
+        }
+        binding.btnTimePicker.setOnClickListener {
+
+            val calender = Calendar.getInstance()
+
+            val hour : Int= calender.get(Calendar.HOUR_OF_DAY)
+            val minuet = calender.get(Calendar.MINUTE)
+
+            val timePicker = TimePickerDialog(this,object : TimePickerDialog.OnTimeSetListener{
+                override fun onTimeSet(p0: TimePicker?, p1: Int, p2: Int) {
+
+//                    binding.btnTimePicker.text = "$p1 : $p2"
+
+                    binding.btnTimePicker.text = convert24To12("$p1:$p2")
+
+                }
+
+            },hour,minuet,true)
+
+            timePicker.show()
+
+
+
+        }
+
+
+    }
+
+    fun convert24To12(hour24 : String) : String {
+
+        val pattern12 = SimpleDateFormat("hh:mm a")
+        val pattern24 = SimpleDateFormat("HH:mm")
+
+        // first convert 24 hours string into Date class object
+
+        val date24 : Date =  pattern24.parse(hour24)
+
+        return  pattern12.format(date24)
 
     }
 }

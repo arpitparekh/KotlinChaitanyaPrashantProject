@@ -42,6 +42,7 @@
         <entry key="app/src/main/res/layout/layout_linear.xml" value="0.264" />
         <entry key="app/src/main/res/layout/layout_relative.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/layout_table.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/progress_horizontal.xml" value="0.4" />
         <entry key="app/src/main/res/layout/progress_spinner.xml" value="0.264" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.4" />
       </map>
