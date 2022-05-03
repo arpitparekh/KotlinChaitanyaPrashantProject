@@ -198,7 +198,6 @@ class MyDialogActivity : AppCompatActivity() {
                             Toast.makeText(this,"Download SuccessFull",Toast.LENGTH_SHORT).show()
 
                         }
-
                     }
                 }
 
