@@ -1,13 +1,17 @@
 package arpit.parekh.kotlinchaitanyaprashantproject.dialogs
 
+import android.app.DatePickerDialog
 import android.app.Dialog
 import android.app.ProgressDialog
 import android.app.TimePickerDialog
 import android.content.DialogInterface
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.DatePicker
 import android.widget.TimePicker
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import arpit.parekh.kotlinchaitanyaprashantproject.R
 import arpit.parekh.kotlinchaitanyaprashantproject.databinding.ActivityMyDialogBinding
@@ -27,6 +31,7 @@ class MyDialogActivity : AppCompatActivity() {
     lateinit var progressHorizontalBinding: ProgressHorizontalBinding
     lateinit var items : ArrayList<String>
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMyDialogBinding.inflate(layoutInflater)
@@ -160,18 +165,17 @@ class MyDialogActivity : AppCompatActivity() {
 
             })
             builder.show()
-
 //            dialog.dismiss()
-
-
         }
 
         binding.btnProgress2.setOnClickListener {
 
             progressHorizontalBinding = ProgressHorizontalBinding.inflate(layoutInflater)
 
-            val dialog = Dialog(this)
-            dialog.setContentView(progressHorizontalBinding.root)
+            val builder = AlertDialog.Builder(this)
+            builder.setView(progressHorizontalBinding.root)
+
+            val dialog : AlertDialog = builder.create()
 
             progressHorizontalBinding.pbHorizontal.max = 100
 
@@ -181,7 +185,7 @@ class MyDialogActivity : AppCompatActivity() {
 
                 for( i in 0..100){
 
-                    Thread.sleep(100)
+                    Thread.sleep(50)
 
                     runOnUiThread {
 
@@ -192,9 +196,12 @@ class MyDialogActivity : AppCompatActivity() {
                     if(i==100){
 
                         dialog.dismiss()
-
                         runOnUiThread {
 
+                            if(dialog.isShowing){
+                                dialog.dismiss()
+
+                            }
                             Toast.makeText(this,"Download SuccessFull",Toast.LENGTH_SHORT).show()
 
                         }
@@ -225,25 +232,45 @@ class MyDialogActivity : AppCompatActivity() {
 
             timePicker.show()
 
-
-
         }
 
+        binding.btnDataPicker.setOnClickListener {
+
+            val calendar = Calendar.getInstance()
+            val year = calendar.get(Calendar.YEAR)
+            val month = calendar.get(Calendar.MONDAY)
+            val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+            val datePicker = DatePickerDialog(this,object : DatePickerDialog.OnDateSetListener{
+                override fun onDateSet(p0: DatePicker?, p1: Int, p2: Int, p3: Int) {
+
+                    binding.btnDataPicker.text = "$p3/${p2+1}/$p1"
+
+                }
+            },year,month,day)
+
+            datePicker.show()
+        }
+
+        binding.btnFullScreen.setOnClickListener {
+
+            dialogBinding = DialogLayoutBinding.inflate(layoutInflater)
+
+            val dialog = Dialog(this,android.R.style.Theme_Light_NoTitleBar_Fullscreen)
+
+            dialog.setContentView(dialogBinding.root)
+
+            dialog.show()
+        }
 
     }
 
     fun convert24To12(hour24 : String) : String {
-
         val pattern12 = SimpleDateFormat("hh:mm a")
         val pattern24 = SimpleDateFormat("HH:mm")
-
         // first convert 24 hours string into Date class object using pattern24
-
         // convert 24 date object into 12 hours string using pattern12
-
         val date24 : Date =  pattern24.parse(hour24)
-
         return  pattern12.format(date24)
-
     }
 }

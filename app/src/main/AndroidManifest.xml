@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject">
         <activity
-            android:name=".dialogs.MyDialogActivity"
+            android:name=".assignment_questions.ReverseNumberActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -21,13 +21,26 @@
 
         </activity>
         <activity
-            android:name=".widgets.MySeekActivity"
-            android:exported="true">
+            android:name=".SplashScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".date_differentce.DateDifferenceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".navigation_drawer.MyDrawerActivity"
+            android:exported="true"
+            android:theme="@style/FullScreen">
 
         </activity>
         <activity
+            android:name=".dialogs.MyDialogActivity"
+            android:exported="true" />
+        <activity
+            android:name=".widgets.MySeekActivity"
+            android:exported="true" />
+        <activity
             android:name=".menu.MyMenuActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".widgets.RadioButtonActivity"
             android:exported="true" />
