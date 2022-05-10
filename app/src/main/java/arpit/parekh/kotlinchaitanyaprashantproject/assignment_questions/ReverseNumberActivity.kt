@@ -20,8 +20,6 @@ class ReverseNumberActivity : AppCompatActivity() {
 
             override fun onTextChanged(cs: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
-
-
                 if(binding.edtReverse.text.toString().isNotEmpty()){
 
                     var number : Int = binding.edtReverse.text.toString().toInt()
