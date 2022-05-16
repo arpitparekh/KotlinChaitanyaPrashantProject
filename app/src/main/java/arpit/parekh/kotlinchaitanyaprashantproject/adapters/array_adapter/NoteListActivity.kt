@@ -1,4 +1,4 @@
-package arpit.parekh.kotlinchaitanyaprashantproject.adapters
+package arpit.parekh.kotlinchaitanyaprashantproject.adapters.array_adapter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

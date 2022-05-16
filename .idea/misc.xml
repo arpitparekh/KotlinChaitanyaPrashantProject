@@ -25,6 +25,8 @@
         <entry key="app/src/main/res/layout/activity_my_menu.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_pager.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_my_seek.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_my_simple.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_my_spinner.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_new_ctsactivity.xml" value="0.536" />
         <entry key="app/src/main/res/layout/activity_note_list.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_one.xml" value="0.264" />
@@ -54,6 +56,7 @@
         <entry key="app/src/main/res/layout/listview_item_layout.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/progress_horizontal.xml" value="0.4" />
         <entry key="app/src/main/res/layout/progress_spinner.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/simple_row_item.xml" value="0.4" />
         <entry key="app/src/main/res/layout/toolbar_layout.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/update_vehicle_dialog.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/menu/my_menu.xml" value="0.4" />

@@ -1,4 +1,4 @@
-package arpit.parekh.kotlinchaitanyaprashantproject.adapters
+package arpit.parekh.kotlinchaitanyaprashantproject.adapters.array_adapter
 
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
@@ -40,6 +40,10 @@ class VehicleListActivity : AppCompatActivity() {
             dialogBinding.edtUpdateType.setText(vehicle.type)
             dialogBinding.edtUpdateAverage.setText(vehicle.average.toString())
 
+
+            // coroutines
+
+            // process  -> 1 thread -> multiple coroutines
 
             AlertDialog.Builder(this)
                 .setTitle(R.string.title)

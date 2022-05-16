@@ -1,4 +1,4 @@
-package arpit.parekh.kotlinchaitanyaprashantproject.adapters
+package arpit.parekh.kotlinchaitanyaprashantproject.adapters.array_adapter
 
 data class Vehicle(val name : String,val type : String,val average : Int){
 

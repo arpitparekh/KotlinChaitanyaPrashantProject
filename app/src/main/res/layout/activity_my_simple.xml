@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".adapters.array_adapter.NoteListActivity">
+    tools:context=".adapters.simple_adapter.MySimpleActivity">
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listViewNotes"/>
+        android:id="@+id/listViewSimple"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
