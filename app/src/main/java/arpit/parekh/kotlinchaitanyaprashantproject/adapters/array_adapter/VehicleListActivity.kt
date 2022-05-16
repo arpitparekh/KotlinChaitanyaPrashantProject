@@ -29,6 +29,7 @@ class VehicleListActivity : AppCompatActivity() {
 //        list.add(Vehicle("Hundai","4Wheel",35))
 //        list.add(Vehicle("Helicopter","NoWheel",10))
 
+//        binding.listViewVehicle.setOnItem
 
         binding.listViewVehicle.setOnItemClickListener { adapterView, view, pos, l ->
 

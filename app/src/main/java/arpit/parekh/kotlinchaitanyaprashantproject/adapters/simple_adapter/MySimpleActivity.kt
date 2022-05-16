@@ -50,5 +50,7 @@ class MySimpleActivity : AppCompatActivity() {
 
         binding.listViewSimple.adapter = simpleAdapter
 
+        binding.spinner.adapter = simpleAdapter
+
     }
 }

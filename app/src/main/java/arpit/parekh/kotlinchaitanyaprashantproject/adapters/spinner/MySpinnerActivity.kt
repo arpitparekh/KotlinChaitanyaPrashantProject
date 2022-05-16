@@ -24,22 +24,34 @@ class MySpinnerActivity : AppCompatActivity() {
         list.add("coding")
         list.add("harmonica")
 
+
+
         val adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,list)
 
         binding.spinner.adapter = adapter
 
-        binding.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+//        binding.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+//
+//            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, pos: Int, p3: Long) {
+//
+//                Toast.makeText(applicationContext,list[pos],Toast.LENGTH_SHORT).show()
+//
+//            }
+//
+//            override fun onNothingSelected(p0: AdapterView<*>?) {
+//                TODO("Not yet implemented")
+//            }
+//        }
+            binding.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+                override fun onItemSelected(p0: AdapterView<*>?, p1: View?, pos: Int, p3: Long) {
+                    Toast.makeText(this@MySpinnerActivity,list[pos],Toast.LENGTH_SHORT).show()
+                }
 
-            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, pos: Int, p3: Long) {
+                override fun onNothingSelected(p0: AdapterView<*>?) {
 
-                Toast.makeText(applicationContext,list[pos],Toast.LENGTH_SHORT).show()
+                }
 
             }
-
-            override fun onNothingSelected(p0: AdapterView<*>?) {
-                TODO("Not yet implemented")
-            }
-        }
 
     }
 }
