@@ -15,6 +15,7 @@
         <entry key="app/src/main/res/layout/activity_ctsactivity.xml" value="0.8800000000000001" />
         <entry key="app/src/main/res/layout/activity_date_difference.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_extra_holder.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/activity_faculty_list.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_insert_emp_data.xml" value="0.264" />
@@ -41,6 +42,7 @@
         <entry key="app/src/main/res/layout/activity_two.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_vehicle_list.xml" value="0.264" />
         <entry key="app/src/main/res/layout/dialog_layout.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/faculty_row_item.xml" value="0.2875" />
         <entry key="app/src/main/res/layout/fragment_demo.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/fragment_dusra.xml" value="0.2390625" />
         <entry key="app/src/main/res/layout/fragment_goa.xml" value="0.26145833333333335" />
