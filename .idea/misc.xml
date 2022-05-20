@@ -26,7 +26,7 @@
         <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_my_menu.xml" value="0.28958333333333336" />
-        <entry key="app/src/main/res/layout/activity_my_pager.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_my_pager.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_seek.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_simple.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_spinner.xml" value="0.28958333333333336" />
@@ -43,6 +43,8 @@
         <entry key="app/src/main/res/layout/activity_vehicle_list.xml" value="0.264" />
         <entry key="app/src/main/res/layout/dialog_layout.xml" value="0.264" />
         <entry key="app/src/main/res/layout/faculty_row_item.xml" value="0.2875" />
+        <entry key="app/src/main/res/layout/fragment_call.xml" value="0.2671875" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/fragment_demo.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/fragment_dusra.xml" value="0.2390625" />
         <entry key="app/src/main/res/layout/fragment_goa.xml" value="0.26145833333333335" />
@@ -51,6 +53,7 @@
         <entry key="app/src/main/res/layout/fragment_mumbai.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/fragment_my.xml" value="0.2390625" />
         <entry key="app/src/main/res/layout/fragment_pehla.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/fragment_status.xml" value="0.2671875" />
         <entry key="app/src/main/res/layout/header_layout.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/layout_constraint.xml" value="0.264" />
         <entry key="app/src/main/res/layout/layout_frame.xml" value="0.26145833333333335" />

@@ -12,11 +12,7 @@
         <activity
             android:name=".recyclerview_crud.FacultyListActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".bottom_appbar.BottomBarActivity"
@@ -40,7 +36,15 @@
             android:exported="true" />
         <activity
             android:name=".viewpager_tablayout.MyPagerActivity"
-            android:exported="false" />
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".assignment_questions.ReverseNumberActivity"
             android:exported="true" />

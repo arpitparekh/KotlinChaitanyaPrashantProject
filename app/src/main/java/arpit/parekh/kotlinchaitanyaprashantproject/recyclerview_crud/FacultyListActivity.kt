@@ -67,9 +67,8 @@ class FacultyListActivity : AppCompatActivity(),OnAdapterItemClickInterface{
             .setTitle("Choose One")
             .setPositiveButton("Update", DialogInterface.OnClickListener { dialogInterface, i ->
 
-//
-//                AlertDialog.Builder(this)
-//                    .setView()
+                // list.set()
+                // update data
 
             })
             .setNegativeButton("Delete", DialogInterface.OnClickListener { dialogInterface, i ->
