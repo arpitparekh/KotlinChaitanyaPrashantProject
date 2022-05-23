@@ -10,18 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject">
         <activity
-            android:name=".recyclerview_crud.FacultyListActivity"
+            android:name=".storage.InternalStorageActivity"
             android:exported="true" >
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
+        <activity
+            android:name=".bottom_sheet.MyBottomSheetActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".recyclerview_crud.FacultyListActivity"
+            android:exported="true" />
         <activity
             android:name=".bottom_appbar.BottomBarActivity"
             android:exported="false" />
         <activity
             android:name=".adapters.auto_complete_textview.AutoActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".adapters.spinner.MySpinnerActivity"
             android:exported="true" />
@@ -36,15 +48,7 @@
             android:exported="true" />
         <activity
             android:name=".viewpager_tablayout.MyPagerActivity"
-            android:exported="true" >
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".assignment_questions.ReverseNumberActivity"
             android:exported="true" />
