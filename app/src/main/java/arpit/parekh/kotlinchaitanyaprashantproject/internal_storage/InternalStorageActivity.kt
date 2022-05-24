@@ -1,4 +1,4 @@
-package arpit.parekh.kotlinchaitanyaprashantproject.storage
+package arpit.parekh.kotlinchaitanyaprashantproject.internal_storage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
