@@ -8,10 +8,16 @@ import androidx.room.PrimaryKey
 data class Note(
 
     @ColumnInfo(name="title")
-    val title : String,
+    var title : String,
 
     @ColumnInfo(name = "des")
-    val des : String,
+    var des : String,
 
     @PrimaryKey(autoGenerate = true)
-    val key : Int=0)
+    val key : Int=0){
+
+    override fun toString(): String {
+        return "title : $title\ndes : $des"
+    }
+
+}

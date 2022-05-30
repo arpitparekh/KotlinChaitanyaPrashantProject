@@ -27,4 +27,11 @@
         android:layout_below="@id/edtDes"
         android:text="Add"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnAdd"
+        android:id="@+id/recyclerViewNotes"
+        android:layout_margin="10dp"/>
+
 </RelativeLayout>

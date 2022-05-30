@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="obj"
+            type="arpit.parekh.kotlinchaitanyaprashantproject.room.Note" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#FFEB3B"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:textColor="@color/black"
+                android:text="@{obj.title}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvDes"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text="@{obj.des}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitle"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

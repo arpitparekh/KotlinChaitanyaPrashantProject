@@ -36,4 +36,6 @@ interface NoteDao {
     @Query("update note set title=:title,des=:des where `key`=:key")
     fun updateOther(title :String,des : String,key : Int)
 
+
+
 }
