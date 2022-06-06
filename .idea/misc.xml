@@ -27,6 +27,7 @@
         <entry key="app/src/main/res/layout/activity_my_data_binding.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_my_dialog.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_drawer.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_my_external.xml" value="0.4" />
         <entry key="app/src/main/res/layout/activity_my_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_my_menu.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_pager.xml" value="0.264" />
@@ -34,6 +35,7 @@
         <entry key="app/src/main/res/layout/activity_my_shared.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_simple.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_spinner.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_my_web.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_new_ctsactivity.xml" value="0.536" />
         <entry key="app/src/main/res/layout/activity_note.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_note_list.xml" value="0.28958333333333336" />
