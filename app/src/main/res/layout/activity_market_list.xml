@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".market_json_parsing.MarketListActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTime"
+        android:hint="Enter Time Interval"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEquity"
+        android:layout_below="@id/edtTime"
+        android:hint="Enter Equity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFetch"
+        android:text="Fetch"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/edtEquity"/>
+
+    <TextView
+        android:id="@+id/tvMarket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnFetch"
+        android:background="#9FA2D6"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
