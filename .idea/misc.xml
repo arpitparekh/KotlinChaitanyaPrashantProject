@@ -7,6 +7,7 @@
         <entry key="..\:/Users/Tops/AndroidStudioProjects/KotlinChaitanyaPrashantProject/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Tops/AndroidStudioProjects/KotlinChaitanyaPrashantProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.143" />
         <entry key="app/src/main/res/drawable/ic_smile.xml" value="0.236" />
+        <entry key="app/src/main/res/drawable/my_vector.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_aactivity.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_another_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_ask_permission.xml" value="0.28958333333333336" />
@@ -34,6 +35,7 @@
         <entry key="app/src/main/res/layout/activity_my_json.xml" value="0.2671875" />
         <entry key="app/src/main/res/layout/activity_my_menu.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_pager.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_my_photoes.xml" value="0.2671875" />
         <entry key="app/src/main/res/layout/activity_my_seek.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_my_shared.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_my_simple.xml" value="0.28958333333333336" />
@@ -74,6 +76,7 @@
         <entry key="app/src/main/res/layout/listview_item_layout.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/my_bottom_sheet.xml" value="0.2875" />
         <entry key="app/src/main/res/layout/note_row_item.xml" value="0.2875" />
+        <entry key="app/src/main/res/layout/photo_row_item.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/progress_horizontal.xml" value="0.4" />
         <entry key="app/src/main/res/layout/progress_spinner.xml" value="0.264" />
         <entry key="app/src/main/res/layout/simple_row_item.xml" value="0.4" />

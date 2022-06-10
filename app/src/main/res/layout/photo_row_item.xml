@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="obj"
+            type="arpit.parekh.kotlinchaitanyaprashantproject.photo_json_parsing.Photo" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="#7FC582"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivPhoto"
+                android:layout_marginTop="10dp"
+                android:text="@{obj.author}"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -54,4 +54,15 @@
         android:text="Camera"
         app:layout_constraintBottom_toTopOf="@+id/btnSwitch"
         app:layout_constraintEnd_toEndOf="@+id/btnSwitch" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        android:layout_width="332dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/my_vector"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
