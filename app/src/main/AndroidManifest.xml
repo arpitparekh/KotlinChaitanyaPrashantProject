@@ -18,7 +18,7 @@
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".photo_json_parsing.MyPhotosActivity"
+            android:name=".retrofit.WeatherListActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -29,13 +29,16 @@
 
         </activity>
         <activity
-            android:name=".market_json_parsing.MarketListActivity"
+            android:name=".photo_json_parsing.MyPhotosActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".json_parsing.MyJsonActivity"
+            android:name=".market_json_parsing.MarketListActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".json_parsing.MyJsonActivity"
+            android:exported="true" />
         <activity
             android:name=".interal_to_external.InternalToExternalActivity"
             android:exported="true" />
