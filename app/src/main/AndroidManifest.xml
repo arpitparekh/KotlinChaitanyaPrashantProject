@@ -18,8 +18,8 @@
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".retrofit.WeatherListActivity"
-            android:exported="true" >
+            android:name=".firebase_realtime_database.CustomerListActivity"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,13 +29,25 @@
 
         </activity>
         <activity
-            android:name=".photo_json_parsing.MyPhotosActivity"
+            android:name=".firebase_authentication.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase_authentication.FirebaseRegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".firebase_authentication.FirebaseLoginActivity"
             android:exported="true">
 
         </activity>
         <activity
+            android:name=".retrofit.WeatherListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".photo_json_parsing.MyPhotosActivity"
+            android:exported="true" />
+        <activity
             android:name=".market_json_parsing.MarketListActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".json_parsing.MyJsonActivity"
             android:exported="true" />

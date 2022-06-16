@@ -15,10 +15,14 @@
         <entry key="app/src/main/res/layout/activity_bactivity.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_bottom_bar.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_ctsactivity.xml" value="0.8800000000000001" />
+        <entry key="app/src/main/res/layout/activity_customer_list.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_date_difference.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_extra_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_faculty_list.xml" value="0.28958333333333336" />
+        <entry key="app/src/main/res/layout/activity_firebase_login.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_firebase_register.xml" value="0.28958333333333336" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/activity_forget_password.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_holder.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/activity_insert_emp_data.xml" value="0.264" />
         <entry key="app/src/main/res/layout/activity_internal_storage.xml" value="0.28958333333333336" />

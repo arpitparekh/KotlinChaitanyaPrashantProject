@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".firebase_authentication.FirebaseLoginActivity">
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email Address" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtEmail"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvForget"
+        android:text="Forget Password?"
+        android:layout_alignEnd="@id/edtPassword"
+        android:layout_below="@id/edtPassword"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="10dp"
+        android:text="Login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User ?"
+        android:id="@+id/tvNewUser"
+        android:layout_below="@id/btnLogin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

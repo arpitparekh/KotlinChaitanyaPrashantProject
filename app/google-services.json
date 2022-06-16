@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "198739562373",
+    "project_id": "koltinchaitanyaproject",
+    "storage_bucket": "koltinchaitanyaproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198739562373:android:ba643bce869b1dedafbeec",
+        "android_client_info": {
+          "package_name": "arpit.parekh.kotlinchaitanyaprashantproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198739562373-ig3jk10if05pgunm8h35jemck76puil7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "arpit.parekh.kotlinchaitanyaprashantproject",
+            "certificate_hash": "d410abf82e931608878e7f22fd2ff339471aebac"
+          }
+        },
+        {
+          "client_id": "198739562373-ca0uleod6su1int3t01vtr4beoufgh08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7-28nNcNkSLzWRBZ2LiUNXldnk4DJXoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198739562373-ca0uleod6su1int3t01vtr4beoufgh08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
