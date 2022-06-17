@@ -2,10 +2,10 @@ package arpit.parekh.kotlinchaitanyaprashantproject.firebase_realtime_database
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import arpit.parekh.kotlinchaitanyaprashantproject.databinding.ActivityCustomerListBinding
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 
 class CustomerListActivity : AppCompatActivity() {
 
@@ -13,12 +13,53 @@ class CustomerListActivity : AppCompatActivity() {
 
     lateinit var ref : DatabaseReference
 
+    lateinit var list : ArrayList<Customer>
+    lateinit var keys : ArrayList<String>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCustomerListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        list = ArrayList()
+        keys = ArrayList()
+
         ref = FirebaseDatabase.getInstance().getReference("Customer").child("CustomDetails")
+
+        binding.listViewCustomer.setOnItemClickListener { adapterView, view, pos, l ->
+
+            val customer =  list[pos]
+            val key = keys[pos]
+
+        }
+
+        ref.addValueEventListener(object : ValueEventListener{
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+
+                list.clear()
+                keys.clear()
+                for(childSnap in snapshot.children){
+
+                    val customer : Customer? = childSnap.getValue(Customer::class.java)
+                    val key : String? = childSnap.key
+
+                    if(customer!=null){
+                        list.add(customer)
+                    }
+                    if (key != null) {
+                        keys.add(key)
+                    }
+                }
+
+                val adapter = ArrayAdapter<Customer>(this@CustomerListActivity,android.R.layout.simple_list_item_1,list)
+                binding.listViewCustomer.adapter = adapter
+            }
+            override fun onCancelled(error: DatabaseError) {
+
+            }
+
+        })
 
         binding.btnSend.setOnClickListener {
 
