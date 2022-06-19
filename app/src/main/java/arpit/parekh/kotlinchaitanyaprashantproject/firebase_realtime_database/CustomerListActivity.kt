@@ -1,18 +1,20 @@
 package arpit.parekh.kotlinchaitanyaprashantproject.firebase_realtime_database
 
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import arpit.parekh.kotlinchaitanyaprashantproject.databinding.ActivityCustomerListBinding
+import arpit.parekh.kotlinchaitanyaprashantproject.databinding.CustomerUpdateLayoutBinding
 import com.google.firebase.database.*
 
 class CustomerListActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityCustomerListBinding
-
+    lateinit var binding1 : CustomerUpdateLayoutBinding
     lateinit var ref : DatabaseReference
-
     lateinit var list : ArrayList<Customer>
     lateinit var keys : ArrayList<String>
 
@@ -28,11 +30,42 @@ class CustomerListActivity : AppCompatActivity() {
 
         binding.listViewCustomer.setOnItemClickListener { adapterView, view, pos, l ->
 
+            binding1 = CustomerUpdateLayoutBinding.inflate(layoutInflater)
+
             val customer =  list[pos]
             val key = keys[pos]
 
-        }
+            binding1.edtNameUpdate.setText(customer.name)
+            binding1.edtAddressUpdate.setText(customer.address)
+            binding1.edtProductUpdate.setText(customer.product)
 
+            AlertDialog.Builder(this)
+                .setTitle("Choose One")
+                .setPositiveButton("Update", DialogInterface.OnClickListener { dialogInterface, i ->
+
+                    AlertDialog.Builder(this)
+                        .setTitle("Update")
+                        .setView(binding1.root)
+                        .setPositiveButton("Update", DialogInterface.OnClickListener { dialogInterface, i ->
+
+                            val name = binding1.edtNameUpdate.text.toString()
+                            val address = binding1.edtAddressUpdate.text.toString()
+                            val product = binding1.edtProductUpdate.text.toString()
+
+                            val customerUpdate = Customer(name,address,product)
+
+                            ref.child(key).setValue(customerUpdate)  // update
+
+
+                        }).create().show()
+
+                }).setNegativeButton("Delete", DialogInterface.OnClickListener { dialogInterface, i ->
+
+                    ref.child(key).removeValue()  // delete
+
+                }).create().show()
+
+        }
         ref.addValueEventListener(object : ValueEventListener{
 
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -51,7 +84,6 @@ class CustomerListActivity : AppCompatActivity() {
                         keys.add(key)
                     }
                 }
-
                 val adapter = ArrayAdapter<Customer>(this@CustomerListActivity,android.R.layout.simple_list_item_1,list)
                 binding.listViewCustomer.adapter = adapter
             }
@@ -78,6 +110,9 @@ class CustomerListActivity : AppCompatActivity() {
             }
 
         }
+
+        // Content Resolver
+        // Cursor
 
     }
 }

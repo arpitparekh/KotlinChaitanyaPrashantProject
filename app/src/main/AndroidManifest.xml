@@ -18,14 +18,19 @@
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".firebase_realtime_database.CustomerListActivity"
-            android:exported="true">
+            android:name=".activity_result.MyResultActivity"
+            android:exported="true" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".firebase_realtime_database.CustomerListActivity"
+            android:exported="true">
 
         </activity>
         <activity
@@ -36,9 +41,7 @@
             android:exported="true" />
         <activity
             android:name=".firebase_authentication.FirebaseLoginActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".retrofit.WeatherListActivity"
             android:exported="true" />

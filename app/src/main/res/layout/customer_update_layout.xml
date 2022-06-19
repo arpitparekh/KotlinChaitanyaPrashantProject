@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNameUpdate"
+        android:hint="Enter Name"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAddressUpdate"
+        android:hint="Enter Address"
+        android:layout_below="@id/edtNameUpdate"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtProductUpdate"
+        android:hint="Enter Product Name"
+        android:layout_below="@id/edtAddressUpdate"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
