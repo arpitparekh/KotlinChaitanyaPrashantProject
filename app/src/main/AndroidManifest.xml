@@ -17,8 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinChaitanyaPrashantProject"
         android:usesCleartextTraffic="true">
+
+        <service android:name=".service.PlaySongService"
+            android:enabled="true"/>
+        <service android:name=".service.DownloadFileService"
+            android:enabled="true"/>
+
         <activity
-            android:name=".firebase_full.FirebaseFullRegistrationActivity"
+            android:name=".service.MyServiceActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -29,13 +35,16 @@
 
         </activity>
         <activity
-            android:name=".activity_result.MyResultActivity"
+            android:name=".firebase_full.FirebaseFullRegistrationActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".firebase_realtime_database.CustomerListActivity"
+            android:name=".activity_result.MyResultActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".firebase_realtime_database.CustomerListActivity"
+            android:exported="true" />
         <activity
             android:name=".firebase_authentication.ForgetPasswordActivity"
             android:exported="false" />
